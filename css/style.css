@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    background-color: #13141A;
+    color: #FDFDFD;
+}
+
+header {
+    background-color: #13141A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FDFDFD;
+    height: 100px;
+}
+
+.logo-h1 {
+    margin-left: 120px;
+}
+
+.web-links {
+    display: flex;
+    justify-content: space-between;
+    width: 339px;
+}
+
+.web-links a{
+    color: #FDFDFD;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.web-links a:hover {
+    transform: translateY(-3px);
+}
+
+.sign-btn {
+    margin-right: 120px;
+}
+
+.btn {
+    border: none;
+    border-radius: 32px;
+    background-color: #00FFA3;
+    padding:  10px 35px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #00ce82;
+    transform: translateY(-3px);
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.welcome-section h1{
+    color: #00FFA3;
+    font-size: 60px;
+}
+
+.welcome-section span{
+    display: flex;
+    justify-content: center;
+}
+
+.cryp-calc {
+    display: flex;
+    flex-direction: column;
+    background-color: #191921;
+    width: 75%;
+    border-radius: 24px;
+    margin-top: 100px;
+    padding: 32px 135px;
+    margin-bottom: 100px;
+    padding-bottom: 32px;
+}
+
+.buy-sell-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.buy-btn {
+    background-color: transparent;
+    font-size: 21px;
+    color: #00FFA3;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #00FFA3;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.sell-btn {
+    background-color: transparent;
+    font-size: 21px;
+    color: #6B6B6B;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.calc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spended p {
+    font-size: 14px;
+}
+
+.spended input {
+    border: none;
+    background-color: #2f3039;
+    color: white;
+    padding: 10px 10px 10px 20px;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 250px;
+    height: 50px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.spended input:focus {
+    border: 1px solid #00FFA3;
+    outline: none;
+}
+
+.spended input::placeholder {
+    color: rgb(130, 130, 130);
+    font-weight: 300;
+}
+
+.received p {
+    font-size: 14px;
+}
+
+.received input {
+    border: none;
+    background-color: #2f3039;
+    color: white;
+    padding: 10px 10px 10px 20px;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 250px;
+    height: 50px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.received input:focus {
+    border: 1px solid #00FFA3;
+    outline: none;
+}
+
+.received input::placeholder {
+    color: rgb(130, 130, 130);
+    font-weight: 300;
+}
+
+
+.exchange-btn button {
+    background-color: transparent;
+    border: none;
+    color: #48484d;
+    font-size: 20px;
+    position: relative;
+    top: 13px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.exchange-btn button:hover {
+    color: rgb(150, 150, 150);
+}
+
+.buy-crypto-btn button{
+    background-color: #00FFA3;
+    border: none;
+    padding: 8px;
+    position: relative;
+    top: 13px;
+    border-radius: 8px;
+    margin-left: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 600; 
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buy-crypto-btn button:hover{
+    background-color: #00ce82;
+}
+
+
+
+.crpto-img {
+    width: 30px;
+    height: 30px;
+}
+
+.coins-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.coin-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.crypto-market {
+    margin-top: 50px;
+    background-color: #000000;
+    padding-top: 90px;
+    padding-bottom: 0px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #191921;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.one:hover {
+    border: 1px solid #00FFA3;
+}
+
+.two {
+    border: 1px solid #00FFA3;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-bottom: 120px;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.child {
+    background-color: #191921;
+    padding: 20px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.faqs-section {
+    margin-top: 150px;
+    padding-bottom: 70px;
+    padding: 90px 0 90px 0;
+    background-color: #000000;
+}
+
+.faqs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+
+.second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.get-in-touch-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px;
+    background-color: #13141A;
+}
+
+.top-div-title {
+    color: #00FFA3;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.left-side-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 359px;
+    width: 60%;
+}
+
+.top-div-para {
+    color: #989898;
+}
+
+.bottom-div {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-side-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.email-label, .dis-input-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.email-input {
+    width: 100%;
+    background-color: #1F2026;
+    height: 50px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.dis-input {
+    width: 100%;
+    background-color: #1F2026;
+    height: 150px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #000000;
+    padding: 90px 0 0 0;
+}
+
+.top-footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.first-top-footer-div {
+    margin-left: 50px;
+}
+
+.first-top-footer-div h3 {
+    margin-bottom: 15px;
+}
+
+.first-top-footer-div div ul li a{
+    color: #DCDCDC;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.first-top-footer-div div ul li {
+    list-style: none;
+}
+
+.second-top-footer-div {
+    margin-left: 30px;
+}
+
+.second-top-footer-div h3 {
+    margin-bottom: 15px;
+}
+
+.second-top-footer-div div ul li a{
+    color: #DCDCDC;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.second-top-footer-div div ul li {
+    list-style: none;
+}
+
+.third-top-footer-div {
+    margin-left: 30px;
+}
+
+.third-top-footer-div h3 {
+    margin-bottom: 15px;
+}
+
+.third-top-footer-div div ul li a{
+    color: #DCDCDC;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.third-top-footer-div div ul li {
+    list-style: none;
+}
+
+.fourth-top-footer-div {
+    margin-right: 50px;
+}
+
+.top-footer-div {
+    margin-bottom: 50px;
+}
+
+.bottom-footer-div {
+    border-top: 1px solid #2E303D;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.first-bottom-footer-div p {
+    color: #6B6B6B;
+}
+
+.second-bottom-footer-div {
+    display: flex;
+    gap: 32px;
+    color: #6B6B6B;
+}
+
+.second-bottom-footer-div i{
+    cursor: pointer;
+}
